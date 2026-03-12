@@ -1,4 +1,3 @@
-#pip install imgui[glfw]
 import imgui
 import glfw
 import OpenGL.GL as gl
