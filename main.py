@@ -40,7 +40,7 @@ class GUI(object):
 
         self.string = ""
         self.f = 0.5
-
+        
         self.loop()
 
     def loop(self):
@@ -60,10 +60,7 @@ class GUI(object):
             _, self.f = imgui.slider_float("float", self.f, 0.25, 1.5)
 
             imgui.show_test_window()
-            
-            imgui.begin("test on nvim")
-            imgui.text("test")
-            imgui.end() 
+             
 
             
 

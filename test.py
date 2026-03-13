@@ -1,0 +1,16 @@
+﻿print("what the fuck")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
