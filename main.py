@@ -54,13 +54,16 @@ class GUI(object):
             if imgui.button("OK"):
                 print(f"String: {self.string}")
                 print(f"Float: {self.f}")
-
+            
             _, self.string = imgui.input_text("A String", self.string, 256)
                 
             _, self.f = imgui.slider_float("float", self.f, 0.25, 1.5)
 
-            imgui.show_test_window()
              
+            if imgui.button("Test print button"):
+                print("Esptein Fuck Nigger")
+            
+            imgui.show_test_window()
 
             
 

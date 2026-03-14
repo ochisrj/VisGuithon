@@ -1,7 +1,5 @@
-﻿print("what the fuck")
-
-
-
+﻿# BASIC PYTHON
+print("Hello, World!!")
 
 
 
