@@ -55,14 +55,19 @@ class GUI(object):
 
             if imgui.button("Click Here"):
                     print("Esptein Fuck Nigger")
-            
-       
+            imgui.button("Example ToolTip")
+            if imgui.is_item_hovered():
+                imgui.set_tooltip("Hi this is ToolTip")
+
+
             imgui.show_test_window()
-
-            
-
+  
             imgui.end()
 
+
+            imgui.set_window_position_labeled("Fix Window Position", 19 , 50)
+            imgui.begin("Fix Window Position")
+            imgui.end()
             imgui.render()
 
             gl.glClearColor(*self.backgroundColor)
