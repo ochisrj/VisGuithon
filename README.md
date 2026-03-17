@@ -14,23 +14,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## Layout
-
-```
-VisGuithon Dashboard
-├── core/
-│   ├── app.py            # Main GLFW + imgui loop
-│   └── data_manager.py   # CSV/Excel + psutil live stats
-├── ui/
-│   ├── charts.py         # Line, Bar, Scatter, Pie, Gauge, Sparkline
-│   ├── dashboard_panel.py # Dashboard / CSV / Live tabs
-│   ├── menu_bar.py       # File / View / Help menus
-│   └── file_dialog.py    # Path-input popup
-├── themes/
-│   └── theme_manager.py  # Cyberpunk dark theme colors
-├── data/                 # Auto-generated sample.csv
-└── main.py
-```
+fix bug
 
 ## Usage
 
