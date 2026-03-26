@@ -51,7 +51,7 @@ class GUI(object):
             self.impl.process_inputs()
             imgui.new_frame()
 
-            imgui.set_window_position_labeled("Custom window",5,105)
+            imgui.set_window_position_labeled("Custom window",5,115)
             imgui.begin("Custom window", True)
             imgui.text("Hello, world!")
             imgui.text("Bro I WANT TO PLAY MINECRAFT")
@@ -65,8 +65,23 @@ class GUI(object):
 
             imgui.show_test_window()
             
+            with imgui.begin_main_menu_bar() as main_menu_bar:
+                if main_menu_bar.opened:
+
+                    with imgui.begin_menu('File', True) as file_menu:
+                        if file_menu.opened:
+                            imgui.menu_item('New', 'Ctrl+N', False, True)
+                            imgui.menu_item('Open ...', 'Ctrl+O', False, True)
+
+
+                            with imgui.begin_menu('Open Recent', True) as open_recent_menu:
+                                if open_recent_menu.opened:
+                                    imgui.menu_item('doc.txt', None, False, True)
+
+
             imgui.end()
 
+            
 
             imgui.set_window_position_labeled("Fix Window Position", 5 , 5)
             imgui.begin("Fix Window Position",True,imgui.WINDOW_NO_RESIZE)
