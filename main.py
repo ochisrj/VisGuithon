@@ -61,7 +61,8 @@ class GUI(object):
             imgui.button("Example ToolTip")
             if imgui.is_item_hovered():
                 imgui.set_tooltip("Hi this is ToolTip")
-            imgui.text("fix some text for test git")            
+            imgui.text("fix some text for test git")  
+            imgui.text("Fuck this project")
 
             imgui.show_test_window()
             
